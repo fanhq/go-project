@@ -12,7 +12,7 @@ func testDev(a, b int) (result int, err error) {
 	} else {
 		result = b / a
 	}
-	return
+	return result, err
 }
 
 func main() {

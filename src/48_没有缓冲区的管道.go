@@ -18,7 +18,8 @@ func main() {
 
 	go func() {
 		for i := 0; i < 3; i++ {
-			<-channel
+			a := <-channel
+			fmt.Println(a)
 			fmt.Println("task two")
 		}
 	}()

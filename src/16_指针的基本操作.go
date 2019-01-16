@@ -13,5 +13,4 @@ func main() {
 	p = &a
 	*p = 999
 	fmt.Println("after a is ", a)
-	new()
 }

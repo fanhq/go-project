@@ -10,6 +10,7 @@ func main() {
 	ticker := time.NewTicker(2 * time.Second)
 
 	for i := 0; i < 4; i++ {
+		fmt.Println(time.Now())
 		<-ticker.C
 		fmt.Println("i is ", i)
 

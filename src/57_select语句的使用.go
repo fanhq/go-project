@@ -13,7 +13,7 @@ func main() {
 
 	go func() {
 		for i := 0; i < 8; i++ {
-			if i == 6 {
+			if i == 4 {
 				one <- 2
 			}
 			fmt.Println("i is ", i)
@@ -30,4 +30,6 @@ func main() {
 	case <-timeout:
 		fmt.Println("channel two has data")
 	}
+
+	time.Sleep(time.Second*10)
 }

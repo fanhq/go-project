@@ -20,6 +20,6 @@ func (temp *Person) testFunc() {
 func main() {
 	fmt.Println("Hello World!")
 	var person *Person = &Person{"Mike", 23}
-
+	fmt.Println(person1)
 	person.testFunc()
 }

@@ -10,4 +10,5 @@ func main() {
 	p := new(int)
 	*p = 999
 	fmt.Println("*p is ", *p)
+	fmt.Println("p is ", p)
 }
